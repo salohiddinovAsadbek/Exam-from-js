@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper1 {
+  width: calc(475 / 14.4 * 1vw);
+  padding: calc(44 / 14.4 * 1vw) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: calc(20 / 14.4 * 1vw);
+  background-color: white;
+}
+
+div > img {
+  width: calc(343 / 14.4 * 1vw);
+  height: calc(39 / 14.4 * 1vw);
+}
+
+div > h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(22 / 14.4 * 1vw);
+  font-weight: 600;
+  line-height: calc(27 / 14.4 * 1vw);
+  margin-top: calc(43 / 14.4 * 1vw);
+  margin-bottom: calc(9 / 14.4 * 1vw);
+}
+
+div > p {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(17 / 14.4 * 1vw);
+  color: #6c6c6c;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: calc(20 / 14.4 * 1vw);
+  margin-top: calc(50 / 14.4 * 1vw);
+}
+
+div > label {
+  width: calc(415 / 14.4 * 1vw);
+  height: calc(71 / 14.4 * 1vw);
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 / 14.4 * 1vw);
+}
+
+div > label > span {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(17 / 14.4 * 1vw);
+  color: #6c6c6c;
+}
+
+div > label > input {
+  width: 100%;
+  height: calc(44 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #e5e5e5;
+  border-radius: calc(4 / 14.4 * 1vw);
+  padding-left: calc(5 / 14.4 * 1vw);
+  font-family: Montserrat, sans-serif;
+  font-size: calc(12 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(15 / 14.4 * 1vw);
+  color: #cdcdcd;
+}
+
+div > label > input::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(12 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(15 / 14.4 * 1vw);
+  color: #cdcdcd;
+}
+
+div > button {
+  width: calc(415 / 14.4 * 1vw);
+  height: calc(33 / 14.4 * 1vw);
+  background-color: #feaf00;
+  border: none;
+  border-radius: calc(4 / 14.4 * 1vw);
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(17 / 14.4 * 1vw);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(30 / 14.4 * 1vw);
+}
