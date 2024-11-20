@@ -55,8 +55,8 @@
           <img src="img/left.svg" alt="left" />
           <div>
             <form action="">
-              <input type="text" placeholder="Search..." />
-              <button>
+              <input type="text" placeholder="Search..." class="search" />
+              <button class="searchBtn">
                 <img src="img/search.svg" alt="search" />
               </button>
             </form>
@@ -67,7 +67,9 @@
           <div class="rightBottomTop">
             <h1>Students List</h1>
             <div>
-              <img src="img/sort.svg" alt="sort" />
+              <button onclick="sort()">
+                <img src="img/sort.svg" alt="sort" />
+              </button>
               <button>
                 <a href="./signUp.html" class="add">ADD NEW STUDENT</a>
               </button>
@@ -79,7 +81,7 @@
           <thead>
             <tr>
               <td>Name</td>
-              <td>Email</td>
+              <td>Level</td>
               <td>Phone</td>
               <td>Enroll Number</td>
               <td>Date of admission</td>

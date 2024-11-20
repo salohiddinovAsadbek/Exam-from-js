@@ -12,9 +12,9 @@
       <h1>Sign In</h1>
       <p>Enter your credentials to access your account</p>
       <div class="labels">
-        <label for="Email">
-          <span>Email</span>
-          <input type="email" id="Email" placeholder="Enter your email" />
+        <label for="Name">
+          <span>Name</span>
+          <input type="text" id="Name" placeholder="Enter your name" />
         </label>
         <label for="Password">
           <span>Password</span>
@@ -24,13 +24,20 @@
             placeholder="Enter your password"
           />
         </label>
-        <label for="Name">
-          <span>Name</span>
-          <input type="text" id="Name" placeholder="Enter your name" />
-        </label>
+
         <label for="Phone">
           <span>Phone</span>
           <input type="number" id="Phone" placeholder="Enter your phone" />
+        </label>
+        <label for="way">
+          <span>Which level</span>
+          <select name="" id="option">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JacaScript">JacaScript</option>
+            <option value="Node.js">Node.js</option>
+            <option value="Python">Python</option>
+          </select>
         </label>
       </div>
       <button onclick="addNew()">SIGN UP</button>

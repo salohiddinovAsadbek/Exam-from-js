@@ -106,3 +106,20 @@ div > button {
   justify-content: center;
   margin-top: calc(30 / 14.4 * 1vw);
 }
+
+select {
+  height: calc(40 / 14.4 * 1vw);
+  padding: calc(10 / 14.4 * 1vw) calc(15 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #e5e5e5;
+  font-family: Montserrat, sans-serif;
+  font-size: calc(12 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(15 / 14.4 * 1vw);
+  color: #cdcdcd;
+}
+
+select > option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

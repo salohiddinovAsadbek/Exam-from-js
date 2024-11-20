@@ -44,7 +44,7 @@ switch (month) {
 }
 
 function addNew() {
-  const email = document.getElementById("Email").value;
+  const option = document.getElementById("option").value;
   const phone = document.getElementById("Phone").value;
   const password = document.getElementById("Password").value;
   const name1 = document.getElementById("Name").value;
@@ -54,13 +54,13 @@ function addNew() {
     name: name1,
     password: password,
     phone: phone,
-    email: email,
+    option: option,
     month: month,
     date: date,
     year: year,
   };
 
-  if (email !== "" && phone !== "" && password !== "" && name1 !== "") {
+  if (option !== "" && phone !== "" && password !== "" && name1 !== "") {
     student.push(info);
     localStorage.setItem("student", JSON.stringify(student));
     alert("Student successfully added");
@@ -80,7 +80,7 @@ function table(student) {
                     <img src="img/person photo.svg" alt="person" />
                     <span>${pupil.name}</span>
                   </td>
-                  <td>${pupil.email}</td>
+                  <td>${pupil.option}</td>
                   <td>${pupil.phone}</td>
                   <td>${index + 1}</td>
                   <td>${pupil.date}-${pupil.month}, ${pupil.year}</td>
@@ -88,7 +88,7 @@ function table(student) {
                     <button>
                       <img src="img/pen.svg" alt="pen" />
                     </button>
-                    <button>
+                    <button onclick="delete1(${index + 1})">
                       <img src="img/delete.svg" alt="delete" />
                     </button>
                   </td>
@@ -100,3 +100,29 @@ function table(student) {
 let getItem = JSON.parse(localStorage.getItem("student"));
 
 table(getItem);
+
+const input = document.querySelector(".search");
+const searchBtn = document.querySelector(".searchBtn");
+
+input.addEventListener("input", function (event) {
+  const filtered = getItem.filter((inson) => {
+    if (inson.name.toLowerCase().includes(event.target.value.toLowerCase())) {
+      return inson;
+    } else if (inson.phone.includes(event.target.value)) {
+      return inson;
+    }
+  });
+  table(filtered);
+});
+
+function sort() {
+  const sorted = getItem.sort((a, b) => b.name.localeCompare(a.name));
+  table(sorted);
+}
+
+function delete1(id) {
+  console.log(id);
+  getItem.splice(id - 1, 1);
+  localStorage.setItem("student", JSON.stringify(getItem));
+  location.reload();
+}
