@@ -449,3 +449,70 @@ tbody > tr > td:last-child > button:last-child > img {
   width: calc(16 / 14.4 * 1vw);
   height: calc(18 / 14.4 * 1vw);
 }
+
+.homePage {
+  display: flex;
+  gap: calc(30 / 14.4 * 1vw);
+  padding: calc(0) calc(30 / 14.4 * 1w);
+  background-color: white;
+  height: max-content;
+}
+
+.homePage > div {
+  width: calc(255 / 14.4 * 1vw);
+  height: calc(157 / 14.4 * 1vw);
+  padding: calc(20 / 14.4 * 1vw);
+  border: none;
+  border-radius: calc(8 / 14.4 * 1vw);
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage > div:first-child {
+  background-color: #f0f9ff;
+}
+
+.homePage > div:nth-child(2) {
+  background-color: #fef6fb;
+}
+
+.homePage > div:nth-child(3) {
+  background-color: #fefbec;
+}
+
+.homePage > div:nth-child(4) {
+  background: linear-gradient(110.42deg, #feaf00 18.27%, #f8d442 91.84%);
+}
+
+.white {
+  background-color: white;
+}
+
+.homePage > div:first-child > img {
+  width: calc(48 / 14.4 * 1vw);
+  height: calc(38 / 14.4 * 1vw);
+}
+
+.homePage > div > p {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(17 / 14.4 * 1vw);
+  color: #6c6c6c;
+  margin-top: calc(15 / 14.4 * 1vw);
+}
+
+.homePage > div:nth-child(2) > img {
+  width: calc(28 / 14.4 * 1vw);
+  height: calc(35 / 14.4 * 1vw);
+}
+
+.homePage > div:nth-child(3) > img {
+  width: calc(35 / 14.4 * 1vw);
+  height: calc(40 / 14.4 * 1vw);
+}
+
+.homePage > div:last-child > img {
+  width: calc(34 / 14.4 * 1vw);
+  height: calc(34 / 14.4 * 1vw);
+}
