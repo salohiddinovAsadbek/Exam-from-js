@@ -208,7 +208,29 @@ a {
   color: #c4c4c4;
 }
 
-.rightTop > div > form > button {
+.login {
+  width: calc(100 / 14.4 * 1vw);
+  height: calc(37 / 14.4 * 1vw);
+  background-color: white;
+  border: calc(1 / 14.4 * 1vw) solid #feaf00;
+  border-radius: calc(8 / 14.4 * 1vw);
+  background-color: #feaf00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: calc(20 / 14.4 * 1vw);
+  cursor: pointer;
+}
+
+.login > a {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(17 / 14.4 * 1vw);
+}
+
+.rightTop > div > form > button:last-child {
   width: 10%;
   border: none;
   background-color: inherit;
@@ -453,8 +475,8 @@ tbody > tr > td:last-child > button:last-child > img {
 .homePage {
   display: flex;
   gap: calc(30 / 14.4 * 1vw);
-  padding: calc(0) calc(30 / 14.4 * 1w);
   background-color: white;
+  justify-content: center;
   height: max-content;
 }
 
@@ -486,6 +508,9 @@ tbody > tr > td:last-child > button:last-child > img {
 
 .white {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: calc(30 / 14.4 * 1vw);
 }
 
 .homePage > div:first-child > img {
@@ -515,4 +540,13 @@ tbody > tr > td:last-child > button:last-child > img {
 .homePage > div:last-child > img {
   width: calc(34 / 14.4 * 1vw);
   height: calc(34 / 14.4 * 1vw);
+}
+
+.homePage > div > h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(17 / 14.4 * 1vw);
+  font-weight: 700;
+  line-height: calc(21 / 14.4 * 1vw);
+  color: black;
+  margin-top: calc(20 / 14.4 * 1vw);
 }

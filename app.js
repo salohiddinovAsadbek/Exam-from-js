@@ -64,6 +64,7 @@ function addNew() {
     student.push(info);
     localStorage.setItem("student", JSON.stringify(student));
     alert("Student successfully added");
+    window.location.href = "./home.html";
   } else {
     alert("Fill all the information");
   }
@@ -82,7 +83,7 @@ function table(student) {
                   </td>
                   <td>${pupil.option}</td>
                   <td>${pupil.phone}</td>
-                  <td>${index + 1}</td>
+                  <td>${pupil.password}</td>
                   <td>${pupil.date}-${pupil.month}, ${pupil.year}</td>
                   <td>
                     <button>

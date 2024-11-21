@@ -123,3 +123,22 @@ select > option {
   align-items: center;
   justify-content: center;
 }
+
+.signIn {
+  display: flex;
+  gap: calc(5 / 14.4 * 1vw);
+  margin-top: calc(27 / 14.4 * 1vw);
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 600;
+  line-height: calc(17 / 14.4 * 1vw);
+}
+
+.signIn > a {
+  color: #feaf00;
+  font-family: Montserrat, sans-serif;
+  font-size: calc(14 / 14.4 * 1vw);
+  font-weight: 600;
+  line-height: calc(17 / 14.4 * 1vw);
+  text-decoration: underline;
+}
