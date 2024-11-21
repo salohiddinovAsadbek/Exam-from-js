@@ -55,7 +55,7 @@ div > p {
 
 div > label {
   width: calc(415 / 14.4 * 1vw);
-  height: calc(71 / 14.4 * 1vw);
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: calc(10 / 14.4 * 1vw);
@@ -141,4 +141,28 @@ select > option {
   font-weight: 600;
   line-height: calc(17 / 14.4 * 1vw);
   text-decoration: underline;
+}
+
+.checkColor {
+  display: flex;
+  gap: calc(4 / 14.4 * 1vw);
+  align-items: center;
+  justify-content: center;
+  width: calc(415 / 14.4 * 1vw);
+  display: none;
+}
+
+.checkColor > span {
+  width: 33%;
+  height: calc(2 / 14.4 * 1vw);
+  background-color: white;
+}
+
+.reminderPassword {
+  font-family: Montserrat, sans-serif;
+  font-size: calc(8 / 14.4 * 1vw);
+  font-weight: 400;
+  line-height: calc(15 / 14.4 * 1vw);
+  color: red;
+  display: none;
 }

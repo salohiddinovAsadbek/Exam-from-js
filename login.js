@@ -1,8 +1,9 @@
 let getItem = JSON.parse(localStorage.getItem("student")) || [];
 let admin = "./index.html";
 let studentPage = "./home.html";
-let us = [];
+let us = JSON.parse(localStorage.getItem("studentId")) || [];
 let arr = "";
+
 // let getItem2 = JSON.parse(localStorage.getItem("studentId")) || [];
 
 function logIn() {
@@ -10,19 +11,17 @@ function logIn() {
   const passwordCheck = document.getElementById("PasswordCheck").value;
   if (getItem.length > 0) {
     getItem.map((inson) => {
-      if (nameCheck == inson.name && passwordCheck == inson.password) {
+      if (inson.name == nameCheck && inson.password == passwordCheck) {
         arr = "student";
-        us.push(inson);
+        us[0] = inson;
         localStorage.setItem("studentId", JSON.stringify(us));
       } else if (nameCheck == "asadbek" && passwordCheck == "asadbek") {
         arr = "admin";
-      } else {
-        arr = "bosh";
       }
     });
-  } else {
-    alert("Incorrect");
   }
+
+  console.log(arr);
 
   if (arr == "student") {
     window.location.href = studentPage;

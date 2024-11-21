@@ -43,6 +43,10 @@ switch (month) {
     month = "Invalid"; // Noto'g'ri oy raqami
 }
 
+// password start
+
+// password end
+
 function addNew() {
   const option = document.getElementById("option").value;
   const phone = document.getElementById("Phone").value;
@@ -60,9 +64,21 @@ function addNew() {
     year: year,
   };
 
-  if (option !== "" && phone !== "" && password !== "" && name1 !== "") {
+  let studentId = JSON.parse(localStorage.getItem("studentId"));
+
+  if (
+    option !== "" &&
+    phone !== "" &&
+    password !== "" &&
+    name1 !== "" &&
+    sum1 == 3 &&
+    password.length > 8
+  ) {
     student.push(info);
     localStorage.setItem("student", JSON.stringify(student));
+    studentId[0] = info;
+    localStorage.setItem("studentId", JSON.stringify(studentId));
+
     alert("Student successfully added");
     window.location.href = "./home.html";
   } else {
@@ -115,10 +131,18 @@ input.addEventListener("input", function (event) {
   });
   table(filtered);
 });
-
+let sara = "";
 function sort() {
-  const sorted = getItem.sort((a, b) => b.name.localeCompare(a.name));
-  table(sorted);
+  const sorted = getItem.sort((a, b) => a.name.localeCompare(b.name));
+  const sorted1 = getItem.sort((a, b) => a.option.localeCompare(b.option));
+  if (sara == "sara") {
+    table(sorted1);
+    sara = "";
+  } else {
+    table(sorted);
+    console.log("salom");
+    sara = "sara";
+  }
 }
 
 function delete1(id) {
