@@ -64,7 +64,7 @@ function addNew() {
     year: year,
   };
 
-  let studentId = JSON.parse(localStorage.getItem("studentId"));
+  let studentId = JSON.parse(localStorage.getItem("studentId")) || [];
 
   if (
     option !== "" &&
@@ -78,7 +78,6 @@ function addNew() {
     localStorage.setItem("student", JSON.stringify(student));
     studentId[0] = info;
     localStorage.setItem("studentId", JSON.stringify(studentId));
-
     alert("Student successfully added");
     window.location.href = "./home.html";
   } else {

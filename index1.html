@@ -12,12 +12,12 @@
         <img src="img/Logo.svg" alt="main logo" />
         <div class="logoPerson">
           <img src="img/person.png" alt="person" />
-          <h1 class="nameStudent"></h1>
-          <p>Student</p>
+          <h1>Asadbek Salohiddinov</h1>
+          <p>Admin</p>
         </div>
         <div class="navLinks">
           <nav>
-            <a href="#">
+            <a href="./home.html">
               <img src="img/home.svg" alt="home" />
               <span>Home</span>
             </a>
@@ -50,8 +50,8 @@
           </div>
         </div>
       </div>
-      <div class="right white">
-        <!-- <div class="rightTop">
+      <div class="right">
+        <div class="rightTop">
           <img src="img/left.svg" alt="left" />
           <div>
             <form action="">
@@ -62,32 +62,35 @@
             </form>
             <img src="img/alarm.svg" alt="alarm" />
           </div>
-        </div> -->
-        <div class="homePage">
-          <div>
-            <img src="img/graduate cap.svg" alt="cap" />
-            <p>Student</p>
-            <h1 class="nameStudent"></h1>
-          </div>
-          <div>
-            <img src="img/saved.svg" alt="cap" />
-            <p>Course</p>
-            <h1 class="courseStudent"></h1>
-          </div>
-          <div>
-            <img src="img/payment2.svg" alt="cap" />
-            <p>Payment</p>
-            <h1 class="">3000$</h1>
-          </div>
-          <div>
-            <img src="img/user.svg" alt="cap" />
-            <p>User</p>
-            <h1>1</h1>
+        </div>
+        <div class="rightBottom">
+          <div class="rightBottomTop">
+            <h1>Students List</h1>
+            <div>
+              <button onclick="sort()">
+                <img src="img/sort.svg" alt="sort" />
+              </button>
+              <button>
+                <a href="./signUp.html" class="add">ADD NEW STUDENT</a>
+              </button>
+            </div>
           </div>
         </div>
+        <div class="line"></div>
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Level</td>
+              <td>Phone</td>
+              <td>Password (code)</td>
+              <td>Date of admission</td>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
       </div>
     </div>
     <script src="app.js"></script>
-    <script src="home.js"></script>
   </body>
 </html>
