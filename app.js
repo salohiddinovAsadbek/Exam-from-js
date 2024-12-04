@@ -101,7 +101,7 @@ function table(student) {
                   <td>${pupil.password}</td>
                   <td>${pupil.date}-${pupil.month}, ${pupil.year}</td>
                   <td>
-                    <button>
+                    <button onclick= "reverse(${index + 1})">
                       <img src="img/pen.svg" alt="pen" />
                     </button>
                     <button onclick="delete1(${index + 1})">
@@ -116,6 +116,17 @@ function table(student) {
 let getItem = JSON.parse(localStorage.getItem("student"));
 
 table(getItem);
+
+let signUp = "./signUp.html";
+
+function reverse(a) {
+  let inson = JSON.parse(localStorage.getItem("studentReverse")) || [];
+  console.log("slaomn");
+
+  inson[0] = getItem[a];
+  localStorage.setItem("studentReverse", JSON.stringify(inson));
+  window.location.href = signUp;
+}
 
 const input = document.querySelector(".search");
 const searchBtn = document.querySelector(".searchBtn");

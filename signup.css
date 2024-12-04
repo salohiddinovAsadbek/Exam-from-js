@@ -166,3 +166,345 @@ select > option {
   color: red;
   display: none;
 }
+
+@media only screen and (max-width: 840px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper1 {
+    width: calc(360 / 8.4 * 1vw);
+    padding: calc(30 / 8.4 * 1vw) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: calc(20 / 8.4 * 1vw);
+    background-color: white;
+  }
+
+  div > img {
+    width: calc(300 / 8.4 * 1vw);
+    height: calc(30 / 8.4 * 1vw);
+  }
+
+  div > h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(22 / 8.4 * 1vw);
+    font-weight: 600;
+    line-height: calc(27 / 8.4 * 1vw);
+    margin-top: calc(43 / 8.4 * 1vw);
+    margin-bottom: calc(9 / 8.4 * 1vw);
+  }
+
+  div > p {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(17 / 8.4 * 1vw);
+    color: #6c6c6c;
+  }
+
+  .labels {
+    display: flex;
+    flex-direction: column;
+    gap: calc(20 / 8.4 * 1vw);
+    margin-top: calc(50 / 8.4 * 1vw);
+  }
+
+  div > label {
+    width: calc(300 / 8.4 * 1vw);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: calc(10 / 8.4 * 1vw);
+  }
+
+  div > label > span {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(17 / 8.4 * 1vw);
+    color: #6c6c6c;
+  }
+
+  div > label > input {
+    width: 100%;
+    height: calc(40 / 8.4 * 1vw);
+    border: calc(1 / 8.4 * 1vw) solid #e5e5e5;
+    border-radius: calc(4 / 8.4 * 1vw);
+    padding-left: calc(5 / 8.4 * 1vw);
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 8.4 * 1vw);
+    color: #cdcdcd;
+  }
+
+  div > label > input::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 8.4 * 1vw);
+    color: #cdcdcd;
+  }
+
+  div > button {
+    width: calc(300 / 8.4 * 1vw);
+    height: calc(30 / 8.4 * 1vw);
+    background-color: #feaf00;
+    border: none;
+    border-radius: calc(4 / 8.4 * 1vw);
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(17 / 8.4 * 1vw);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(30 / 8.4 * 1vw);
+  }
+
+  select {
+    height: calc(40 / 8.4 * 1vw);
+    padding: calc(10 / 8.4 * 1vw) calc(15 / 8.4 * 1vw);
+    border: calc(1 / 8.4 * 1vw) solid #e5e5e5;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 8.4 * 1vw);
+    color: #cdcdcd;
+  }
+
+  select > option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signIn {
+    display: flex;
+    gap: calc(5 / 8.4 * 1vw);
+    margin-top: calc(27 / 8.4 * 1vw);
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 8.4 * 1vw);
+    font-weight: 600;
+    line-height: calc(17 / 8.4 * 1vw);
+  }
+
+  .signIn > a {
+    color: #feaf00;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 8.4 * 1vw);
+    font-weight: 600;
+    line-height: calc(17 / 8.4 * 1vw);
+    text-decoration: underline;
+  }
+
+  .checkColor {
+    display: flex;
+    gap: calc(4 / 8.4 * 1vw);
+    align-items: center;
+    justify-content: center;
+    width: calc(415 / 8.4 * 1vw);
+    display: none;
+  }
+
+  .checkColor > span {
+    width: 33%;
+    height: calc(2 / 8.4 * 1vw);
+    background-color: white;
+  }
+
+  .reminderPassword {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(8 / 8.4 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 8.4 * 1vw);
+    color: red;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper1 {
+    width: calc(360 / 4.3 * 1vw);
+    padding: calc(30 / 4.3 * 1vw) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: calc(20 / 4.3 * 1vw);
+    background-color: white;
+  }
+
+  div > img {
+    width: calc(300 / 4.3 * 1vw);
+    height: calc(30 / 4.3 * 1vw);
+  }
+
+  div > h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(22 / 4.3 * 1vw);
+    font-weight: 600;
+    line-height: calc(27 / 4.3 * 1vw);
+    margin-top: calc(43 / 4.3 * 1vw);
+    margin-bottom: calc(9 / 4.3 * 1vw);
+  }
+
+  div > p {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(17 / 4.3 * 1vw);
+    color: #6c6c6c;
+  }
+
+  .labels {
+    display: flex;
+    flex-direction: column;
+    gap: calc(20 / 4.3 * 1vw);
+    margin-top: calc(50 / 4.3 * 1vw);
+  }
+
+  div > label {
+    width: calc(300 / 4.3 * 1vw);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: calc(10 / 4.3 * 1vw);
+  }
+
+  div > label > span {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(17 / 4.3 * 1vw);
+    color: #6c6c6c;
+  }
+
+  div > label > input {
+    width: 100%;
+    height: calc(40 / 4.3 * 1vw);
+    border: calc(1 / 4.3 * 1vw) solid #e5e5e5;
+    border-radius: calc(4 / 4.3 * 1vw);
+    padding-left: calc(5 / 4.3 * 1vw);
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 4.3 * 1vw);
+    color: #cdcdcd;
+  }
+
+  div > label > input::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 4.3 * 1vw);
+    color: #cdcdcd;
+  }
+
+  div > button {
+    width: calc(300 / 4.3 * 1vw);
+    height: calc(30 / 4.3 * 1vw);
+    background-color: #feaf00;
+    border: none;
+    border-radius: calc(4 / 4.3 * 1vw);
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(17 / 4.3 * 1vw);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(30 / 4.3 * 1vw);
+  }
+
+  select {
+    height: calc(40 / 4.3 * 1vw);
+    padding: calc(10 / 4.3 * 1vw) calc(15 / 4.3 * 1vw);
+    border: calc(1 / 4.3 * 1vw) solid #e5e5e5;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(12 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 4.3 * 1vw);
+    color: #cdcdcd;
+  }
+
+  select > option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signIn {
+    display: flex;
+    gap: calc(5 / 4.3 * 1vw);
+    margin-top: calc(27 / 4.3 * 1vw);
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 4.3 * 1vw);
+    font-weight: 600;
+    line-height: calc(17 / 4.3 * 1vw);
+  }
+
+  .signIn > a {
+    color: #feaf00;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(14 / 4.3 * 1vw);
+    font-weight: 600;
+    line-height: calc(17 / 4.3 * 1vw);
+    text-decoration: underline;
+  }
+
+  .checkColor {
+    display: flex;
+    gap: calc(4 / 4.3 * 1vw);
+    align-items: center;
+    justify-content: center;
+    width: calc(415 / 4.3 * 1vw);
+    display: none;
+  }
+
+  .checkColor > span {
+    width: 33%;
+    height: calc(2 / 4.3 * 1vw);
+    background-color: white;
+  }
+
+  .reminderPassword {
+    font-family: Montserrat, sans-serif;
+    font-size: calc(8 / 4.3 * 1vw);
+    font-weight: 400;
+    line-height: calc(15 / 4.3 * 1vw);
+    color: red;
+    display: none;
+  }
+}

@@ -50,3 +50,22 @@ passwordCheck.addEventListener("input", function (event1) {
     reminderPassword.style.display = "none";
   }
 });
+
+let inson = JSON.parse(localStorage.getItem("studentReverse"));
+if (inson.length > 0) {
+  var option = document.getElementById("option");
+  var phone = document.getElementById("Phone");
+  var password = document.getElementById("Password");
+  var name1 = document.getElementById("Name");
+  console.log(inson);
+
+  function reverse() {
+    inson.map((ism) => {
+      option.value = ism.option;
+      phone.value = ism.phone;
+      password.value = ism.password;
+      name1.value = ism.name;
+    });
+  }
+  reverse();
+}
